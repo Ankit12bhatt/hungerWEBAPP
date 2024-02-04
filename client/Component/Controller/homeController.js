@@ -370,11 +370,11 @@ app.controller('homeController', ['$scope', '$http', 'setGetdata', 'growl', '$wi
             var statusArray = ["Completed", "preparing"];
             var counter = 0;
             var order = [];
-            while (counter != 5000) {
+            while (counter != 10) {
                 $scope.loading=true;
                 $scope.disablebulk=true;
                 var count = 0;
-                while (count != 200) {
+                while (count != 100000) {
                     var text = "";
 
                     var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
